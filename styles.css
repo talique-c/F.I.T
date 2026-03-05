@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Kode+Mono:wght@400..700&display=swap');
+
+/*-- GENERAL --*/
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+/*-- CONTAINERS --*/
+.reg-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em;
+    border: 2px solid #00ff00;
+    margin: 2em auto;
+    width: 75%;
+}
+
+.reg-container:nth-child(1) {
+    align-items: center;
+}
+
+/*-- SPACING & LAYOUT --*/
+.input-container > input {
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+}
+
+.reg-container > h1 {
+    margin-bottom: 0.5em;
+}
+
+.button-container {
+    margin: 2em auto;
+    text-align: center;
+}
+
+button {
+    border: 2px solid #00ff00;
+    color: #00ff00;
+    padding: 0.5em;
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+button:hover {
+    background-color: #00ff00;
+    color: black;
+}
+
+/*-- TEXT --*/
+h1,
+h2,
+p,
+label,
+input {
+    font-family: "Doto", sans-serif;
+    color: #00ff00;
+}
+
+label,
+input,
+button {
+    font-family: "Kode Mono", sans-serif;
+    font-size: 1.25rem;
+}
+
+input {
+    outline: none;
+    border: none;
+    width: 15%;
+    text-align: center;
+    border-bottom: 2px solid #00ff00;
+}
+
+/*-- MEDIA QUERIES --*/
+@media (max-width: 1000px) {
+    input {
+        width: 20%;
+    }
+}
+
+@media (max-width: 600px) {
+    input {
+        width: 30%;
+    }
+}
+
+@media (max-width: 400px) {
+    input {
+        width: 50%;
+    }
+}
+
+@media (max-width: 200px) {
+    input {
+        width: 50%;
+    }
+}
+
+
+

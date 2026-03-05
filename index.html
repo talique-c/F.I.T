@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>💪 FIT</title>
 </head>
 <body>
-    <h1>Super cool code coming 🤓</h1>
+    <!-- HEADING -->
+    <div class="reg-container">
+        <h1 class="main-heading">Fitness Improvement Trainer</h1>
+        <h2 class="subtitle">Training Terminal v1.0</h2>
+    </div>
+    <!-- PROFILE -->
+    <div class="reg-container">
+        <h1>> User Profile</h1>
+        <div class="input-container">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div class="input-container">
+            <label for="gender">Gender:</label>
+            <input type="text" name="gender" id="gender"> <!-- add dropdown? -->
+        </div>
+         <div class="input-container">
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" min="18" max="80"> <!-- H&S Features! -->
+        </div>
+        <div class="input-container">
+            <label for="weight">Weight(kg):</label>
+            <input type="number" name="weight" id="weight" min="20" max="300"> <!-- H&S Features! -->
+        </div>
+        <div class="input-container">
+            <label for="exercise-level">Exercise Level:</label>
+            <input type="text" name="exercise-level" id="exercise-level"> <!-- add dropdown? -->
+        </div>
+    </div>
+    <!-- BUTTON -->
+    <div class="button-container">
+        <button type="button" id="exercise-button">Find Exercises</button> <!-- go to next menu -->
+    </div>
 </body>
 </html>
