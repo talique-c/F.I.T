@@ -21,6 +21,37 @@
     align-items: center;
 }
 
+/*-- CONTAINERS > EXERCISE MENU --*/
+.card-container {
+    border: 2px solid #00ff00;
+    padding: 2em;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2em;
+}
+
+.exercise-card {
+    border: 2px solid #00ff00;
+}
+
+.img-container > img {
+    border-bottom: 2px solid #00ff00;
+    width: 100%;
+    display: block;
+}
+
+.body-container > h3 {
+    margin: 0.5em 0.25em;
+}
+
+.body-container > p {
+    margin: 0 0.25em;
+    
+}
+
 /*-- SPACING & LAYOUT --*/
 .input-container > input {
     margin-left: 1em;
@@ -28,12 +59,16 @@
 }
 
 .reg-container > h1 {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.2em;
 }
 
 .button-container {
     margin: 2em auto;
     text-align: center;
+}
+
+.card-container > h1 {
+    margin-bottom: 1em;
 }
 
 button {
@@ -52,18 +87,22 @@ button:hover {
 /*-- TEXT --*/
 h1,
 h2,
-p,
-label,
-input {
+h3 {
     font-family: "Doto", sans-serif;
     color: #00ff00;
 }
 
 label,
 input,
-button {
+button,
+p {
     font-family: "Kode Mono", sans-serif;
     font-size: 1.25rem;
+    color: #00ff00;
+}
+
+.subtitle {
+    font-size: 1rem;
 }
 
 input {
@@ -72,6 +111,10 @@ input {
     width: 15%;
     text-align: center;
     border-bottom: 2px solid #00ff00;
+}
+
+h3 {
+    font-size: 1.75rem;
 }
 
 /*-- MEDIA QUERIES --*/
@@ -98,6 +141,3 @@ input {
         width: 50%;
     }
 }
-
-
-
